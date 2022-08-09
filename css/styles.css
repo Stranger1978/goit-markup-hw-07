@@ -41,15 +41,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-/* Header */
-
-.header {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    border-bottom: 1px solid #ECECEC;
-   }
 
 .container {
     margin-left: auto;
@@ -61,37 +52,6 @@ img {
 
 .list {
     list-style-type: none;  
-}
-
-.link {
-    text-decoration: none;
-    color: var(--title-text-color);
-    padding: 32px 0;
-    display: block;
-    position: relative;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover,
-.link:focus {
-    color: var(--accent-color);
-}
-
-.link.current {
-    color: var(--accent-color);
-}
-
-.link.current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
 }
 
 /* Logo*/
@@ -109,6 +69,7 @@ img {
     display: flex;
     align-items: center;
     color: #000000;
+    margin-right: 93px;
 }
 
 .logo--footer {
@@ -118,28 +79,84 @@ img {
 .logo__first-part {
     color: var(--accent-color);
 }
-   
-.header-nav .list {
+
+/* Header */
+
+.header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-nav {
     display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+        
+}
+    
+
+.site-nav {
+        list-style-type: none;
+        display: flex;
+}
+
+.site-nav__item + .site-nav__item {
+        margin-left: 50px;
+}
+
+
+.site-nav__link {
+    text-decoration: none;
+    color: var(--title-text-color);
+    padding: 32px 0;
+    display: block;
+    position: relative;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav__link--current {
+    color: var(--accent-color);
+}
+
+.site-nav__link--current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
 }
 
 .contact-nav {
+    display: flex;
     margin-left: auto;
+    list-style-type: none;
 }
 
-.contact-nav .icon {
+.contact-nav__icon {
     margin-right: 10px;
 }
 
-.list .item + .item {
-    margin-left: 50px;
-}
-
-.contact-nav .item +.item {
+.contact-nav__item +.contact-nav__item {
     margin-left: 30px;
 }
 
-.header-contact {
+.contact-nav__link {
     display: flex;
     color: var(--main-text-color);
     text-decoration: none;
@@ -152,26 +169,12 @@ img {
     
 }
 
-.header-contact:hover,
-.header-contact:focus {
+.contact-nav__link:hover,
+.contact-nav__link:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
 
-.main-nav {
-    display: flex;
-    
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    
-}
-
-.header-nav .logo {
-   margin-right: 93px;
-}
 
 /* Hero */
 .hero {
@@ -573,8 +576,21 @@ img {
 }
 
 /*page portfolio without header and footer*/
+
+.button-list {
+    margin-bottom: 50px;
+
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.button-list__item + .button-list__item {
+    margin-left: 8px;
+    
+    }
  
-.button {
+.button-list__button {
     padding: 6px 22px;
     border-radius: 4px;
     border: 1px solid transparent;
@@ -592,26 +608,14 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-.button:hover,
-.button:focus {
+.button-list__button:hover,
+.button-list__button:focus {
     background-color: var(--accent-color);
     color: #FFFFFF; 
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     }
     
-.item-button + .item-button {
-    margin-left: 8px;
-    
-    }
-
-.projects-buttons {
-    margin-bottom: 50px;
-
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
 
 .projects-example {
     list-style-type: none;

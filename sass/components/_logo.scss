@@ -1,0 +1,30 @@
+/**
+  |============================
+  | Загальні стилі для логотипа компанії
+  |============================
+*/
+
+.logo {
+    text-decoration: none;  
+    font-family: 'Raleway'; 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2; 
+    letter-spacing: 0.03em; 
+
+    &--header {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-right: 93px;
+    }
+
+    &--footer {
+    color: #FFFFFF;
+    }
+
+}
+
+.logo__first-part {
+    color:$accent-color;
+}

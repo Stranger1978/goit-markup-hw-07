@@ -1,0 +1,20 @@
+/**
+  |============================
+  | Стилізація підписки у футері
+  |============================
+*/
+.subscription__label {
+    display: inline-block;
+}
+
+.subscription__mail-input {
+    padding: 15px 0 15px 16px ;
+    width: 358px;
+
+    letter-spacing: 0.03em;
+    background: $footer-hero-background;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}

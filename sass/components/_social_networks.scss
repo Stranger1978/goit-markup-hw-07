@@ -1,0 +1,57 @@
+/**
+  |============================
+  | Загальні стилі для соцмереж
+  |============================
+*/
+
+.social-network {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    &--team {
+        margin-top: 16px;
+    }
+}
+
+.social-network__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+
+    &--team {
+        fill: $icon-main-color;
+    
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+        background: $accent-color;
+        fill: #FFFFFF;
+        }
+    }
+
+    &--footer {
+
+        background: rgba(255, 255, 255, 0.1);
+        
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+        background: $accent-color;
+        }
+    }
+}
+
+.social-network__item + .social-network__item {
+    margin-left: 10px;
+}

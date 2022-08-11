@@ -42,10 +42,7 @@ img {
     height: auto;
 }
 
-.list {
-    list-style-type: none;  
-}
-/* Container */
+  /* Container */
 
 .container {
     margin-left: auto;

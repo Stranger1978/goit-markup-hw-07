@@ -5,11 +5,12 @@
   |============================
 */
 .features {
+    display: flex; 
+    @extend %list;
     font-size: 14px;
     line-height: 1.71;
-    list-style-type: none;
     letter-spacing: 0.03em;
-    display: flex;    
+      
 }
 
 .features__title {
@@ -32,12 +33,10 @@
 }
 
 .features__icon {
-    display: flex;
+    @include centeredFlex;
     margin-bottom: 30px;
     height: 120px;
     border-radius: 4px;
     background-color: $second-background;
-    justify-content: center;
-    align-items: center;
-    
+      
 }

@@ -7,7 +7,7 @@
 .social-network {
     display: flex;
     justify-content: center;
-    list-style-type: none;
+    @extend %list;
 
     &--team {
         margin-top: 16px;
@@ -15,9 +15,7 @@
 }
 
 .social-network__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex;
 
     padding: 0;
     border: none;

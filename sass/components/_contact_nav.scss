@@ -6,7 +6,7 @@
 .contact-nav {
     display: flex;
     margin-left: auto;
-    list-style-type: none;
+    @extend %list;
 }
 
 .contact-nav__icon {
@@ -18,10 +18,9 @@
 }
 
 .contact-nav__link {
-    display: flex;
+    @include centeredFlex;
     color: $main-text-color;
     text-decoration: none;
-    align-items:center;
     fill: currentColor;
 
     transition-property: color, fill;

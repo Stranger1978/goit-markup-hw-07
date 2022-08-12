@@ -5,15 +5,13 @@
 */
 
 .work-list {
-    list-style-type: none; 
+    @extend %list; 
     display: flex;
 }
 
 .work-list__title {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex;
    
     height: 70px;
     bottom: 0;

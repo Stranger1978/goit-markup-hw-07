@@ -6,7 +6,7 @@
 
 
 .site-nav {
-    list-style-type: none;
+    @extend %list;
     display: flex;
 }
 

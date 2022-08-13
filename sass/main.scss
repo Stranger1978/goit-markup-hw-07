@@ -1,11 +1,11 @@
 @import './utils/variables';
 @import './base/normalize';
-@import './utils/base-parameters';
-@import './utils/reset';
+@import './base/base-parameters';
+@import './base/reset';
 @import './utils/placeholders';
 @import './utils/mixin';
 @import './utils/visually_hidden';
-@import './utils/container';
+@import './components/container';
 @import './components/header';
 @import './components/logo';
 @import './components/site_nav';
@@ -23,8 +23,8 @@
 @import './components/footer_social';
 @import './components/footer_subscription';
 @import './components/portfolio_button-list';
-@import './utils/card-list';
+@import './components/card-list';
 @import './components/project-card';
-@import './utils/backdrop';
+@import './components/backdrop';
 @import './components/modal';
 @import './components/form-contact';

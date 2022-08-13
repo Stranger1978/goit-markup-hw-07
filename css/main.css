@@ -331,7 +331,7 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-nav {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +359,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.logo--header {
+.logo__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +369,7 @@ img {
   color: #000000;
   margin-right: 93px;
 }
-.logo--footer {
+.logo__footer {
   color: #FFFFFF;
 }
 
@@ -563,7 +563,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section--without-top {
+.section--without-top-padding {
   padding-top: 0;
 }
 .section--second-background {
@@ -604,14 +604,14 @@ img {
   letter-spacing: 0.03em;
 }
 
-.features__meta {
+.features__item {
   width: 270px;
 }
-.features__meta + .features__meta {
+.features__item + .features__item {
   margin-left: 30px;
 }
 
-.features__icon {
+.features__icon-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -974,7 +974,7 @@ img {
   | Стилізація картки проекту
   |============================
 */
-.project {
+.project-link {
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
@@ -986,12 +986,12 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project:hover, .project:focus {
+.project-link:hover, .project-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project__title {
+.project-link__title {
   margin-bottom: 4px;
   color: #212121;
   font-weight: 700;
@@ -1000,18 +1000,18 @@ img {
   letter-spacing: 0.06em;
 }
 
-.project__type {
+.project-link__type {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0ch;
 }
 
-.project__meta {
+.project-link__meta {
   position: relative;
   overflow: hidden;
 }
 
-.project__content {
+.project-link__content {
   position: absolute;
   padding: 63px 24px;
   bottom: 0;
@@ -1029,7 +1029,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project:hover .project__content, .project:focus .project__content {
+.project-link:hover .project-link__content, .project-link:focus .project-link__content {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }

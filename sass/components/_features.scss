@@ -24,7 +24,7 @@
     letter-spacing: 0.03em;
 }
 
-.features__meta {
+.features__item {
     width: 270px;
 
     &+& {
@@ -32,7 +32,7 @@
     }
 }
 
-.features__icon {
+.features__icon-box {
     @include centeredFlex;
     margin-bottom: 30px;
     height: 120px;
